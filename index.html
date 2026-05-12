@@ -1,0 +1,4542 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="SMB Hungama Band — Live acts for weddings, celebrations and luxury events." name="description" />
+  <meta content="#08010F" name="theme-color" />
+  <title>SMB Hungama Band | Official Roster</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Montserrat:wght@400;500;600&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      /* Logo Yellow Palette (from logo) */
+      --rg: #D4AF37;
+      /* logo gold/yellow */
+      --rg-light: #F9E596;
+      /* soft yellow */
+      --rg-pale: #FDF7E2;
+      --rg-dim: #997A00;
+      /* muted gold */
+
+      /* Purple / Magenta accents (retain for contrast) */
+      --pur: #7C3AED;
+      /* bright violet */
+      --pur-mid: #5A2BBE;
+      --pur-deep: #2E115F;
+
+      /* Cyan highlight */
+      --cyan: #34E1F2;
+
+      /* Deep Backgrounds */
+      --black: #050308;
+      --black-2: #08060A;
+      --black-3: #0f0e12;
+      --black-4: #16151a;
+      --black-5: #1f1d22;
+
+      --text-primary: #FAF8F7;
+      --text-secondary: var(--rg);
+      --text-muted: #BDB3BF;
+
+      --border: rgba(212, 175, 55, 0.15);
+      --border-bright: rgba(212, 175, 55, 0.36);
+      --pur-border: rgba(124, 58, 237, 0.18);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: 64px;
+      background: rgba(8, 1, 15, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-circle {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--black-4);
+      border: 1.5px solid var(--rg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      color: var(--rg);
+      letter-spacing: .04em;
+      line-height: 1.3;
+      text-align: center;
+    }
+
+    .nav-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--rg);
+      letter-spacing: .08em;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .nav-link {
+      font-size: 13px;
+      color: var(--text-muted);
+      text-decoration: none;
+      letter-spacing: .04em;
+      transition: color .2s;
+    }
+
+    .nav-link:hover {
+      color: var(--rg-light);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      background: transparent;
+      border: 1px solid var(--rg);
+      color: var(--rg);
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: .05em;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background .2s, color .2s;
+    }
+
+    .btn-outline:hover {
+      background: var(--rg);
+      color: var(--black);
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+      background: url('https://images.unsplash.com/photo-1540039155732-d68a92bb0364?q=80&w=2000&auto=format&fit=crop') no-repeat center center / cover;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(5, 5, 5, 0.4) 0%, rgba(5, 5, 5, 0.95) 100%);
+      z-index: 0;
+    }
+
+    .hero-glow {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: radial-gradient(circle at 20% 50%, rgba(124, 58, 237, 0.18) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(212, 175, 55, 0.12) 0%, transparent 50%);
+      mix-blend-mode: screen;
+      animation: pulseGlow 6s infinite alternate;
+    }
+
+    @keyframes pulseGlow {
+      0% {
+        opacity: 0.7;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-logo {
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--rg);
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.35);
+      margin-bottom: 1.5rem;
+      animation: fadeUp .8s .1s ease both;
+      transition: transform .35s ease, box-shadow .35s ease;
+      cursor: pointer;
+    }
+
+    .hero-logo:hover {
+      transform: scale(1.12);
+      transform-origin: center;
+      box-shadow: 0 18px 50px rgba(212, 175, 55, 0.32), 0 0 40px rgba(124, 58, 237, 0.06);
+    }
+
+    .hero-eye {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--rg);
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 15px rgba(124, 58, 237, 0.28);
+      animation: fadeUp .8s .1s ease both;
+    }
+
+    .hero-h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3.5rem, 9vw, 7rem);
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--text-primary);
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+      animation: fadeUp .8s .2s ease both;
+    }
+
+    .hero-h1 em {
+      font-style: italic;
+      color: var(--rg);
+      display: block;
+      font-weight: 400;
+      text-transform: none;
+      font-size: clamp(2rem, 5vw, 4rem);
+      margin-top: -10px;
+    }
+
+    .hero-sub {
+      font-size: 15px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+      opacity: 0.8;
+      margin-bottom: 3rem;
+      animation: fadeUp .8s .3s ease both;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      animation: fadeUp .8s .4s ease both;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-hero {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 36px;
+      background: var(--rg);
+      color: var(--black);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--rg);
+      cursor: pointer;
+      transition: all .3s;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    }
+
+    .btn-hero:hover {
+      background: var(--rg-light);
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+      transform: translateY(-2px);
+    }
+
+    .btn-hero-sec {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 36px;
+      background: transparent;
+      color: var(--text-primary);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      transition: all .3s;
+      backdrop-filter: blur(5px);
+    }
+
+    .btn-hero-sec:hover {
+      border-color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.05);
+      transform: translateY(-2px);
+    }
+
+    hr.div {
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+
+    /* SHARED */
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--pur);
+      margin-bottom: .75rem;
+    }
+
+    .sec-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--text-primary);
+    }
+
+    .sec-title em {
+      font-style: italic;
+      color: var(--rg);
+    }
+
+    .sec-sub {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: .75rem;
+    }
+
+    .sec-head {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    /* FILTER */
+    .ftabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    .ftab {
+      padding: 7px 16px;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      letter-spacing: .08em;
+      cursor: pointer;
+      transition: all .2s;
+    }
+
+    .ftab:hover {
+      border-color: var(--rg-dim);
+      color: var(--text-secondary);
+    }
+
+    .ftab.on {
+      border-color: var(--rg);
+      color: var(--rg);
+      background: rgba(124, 58, 237, .07);
+    }
+
+    /* ARTIST GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .acard {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      background: var(--black-3);
+      border: 1px solid var(--black-4);
+      border-radius: 12px;
+      transition: border-color .3s, box-shadow .3s, transform .3s;
+    }
+
+    .acard.featured {
+      grid-column: span 2;
+    }
+
+    .acard:hover {
+      border-color: var(--rg);
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .acard-top {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .acard.featured .acard-top {
+      aspect-ratio: 2/1;
+    }
+
+    .acard-ph {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-weight: 300;
+      color: rgba(124, 58, 237, .11);
+      background: linear-gradient(160deg, var(--black-4) 0%, var(--pur-deep) 100%);
+    }
+
+    .acard-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .acard:hover .acard-img {
+      transform: scale(1.05);
+    }
+
+    .acard-top-ov {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, var(--black-3) 0%, transparent 70%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem 1.5rem 0.5rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: var(--rg);
+      color: var(--black);
+      border-radius: 20px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+      width: fit-content;
+    }
+
+    .acard-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1.1;
+      margin-bottom: .2rem;
+    }
+
+    .acard-sub {
+      font-size: 11px;
+      color: var(--rg);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .acard-bot {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .tag {
+      font-size: 10px;
+      font-weight: 500;
+      padding: 5px 12px;
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid rgba(212, 175, 55, 0.28);
+      color: var(--rg);
+      border-radius: 20px;
+    }
+
+    .acard-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 1.6;
+    }
+
+    .acard-btns {
+      display: flex;
+      gap: 10px;
+      margin-top: auto;
+    }
+
+    .btn-card-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 18px;
+      background: transparent;
+      border: 1px solid rgba(212, 175, 55, 0.28);
+      color: var(--rg);
+      border-radius: 24px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all .2s;
+      flex: 1;
+    }
+
+    .btn-card-outline:hover {
+      background: rgba(212, 175, 55, 0.1);
+      border-color: var(--rg-light);
+    }
+
+    .btn-card-solid {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 18px;
+      background: var(--rg);
+      color: var(--black);
+      border-radius: 24px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all .2s;
+      flex: 1;
+    }
+
+    .btn-card-solid:hover {
+      background: var(--rg-light);
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+    }
+
+    /* PANEL */
+    .poverlay {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: rgba(0, 0, 0, .78);
+      backdrop-filter: blur(5px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s;
+    }
+
+    .poverlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: min(700px, 100vw);
+      background: var(--black-2);
+      border-left: 1px solid var(--border);
+      overflow-y: auto;
+      transform: translateX(100%);
+      transition: transform .35s cubic-bezier(.25, .46, .45, .94);
+      z-index: 201;
+    }
+
+    .panel.open {
+      transform: translateX(0);
+    }
+
+    .pclose {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      background: rgba(8, 1, 15, .93);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pclose button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-secondary);
+      font-size: 22px;
+      line-height: 1;
+      padding: 4px;
+      transition: color .2s;
+    }
+
+    .pclose button:hover {
+      color: var(--text-primary);
+    }
+
+    .pher {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, var(--black-5) 0%, var(--pur-deep) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem;
+      font-weight: 300;
+      color: rgba(212, 175, 55, .12);
+    }
+
+    .pher-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .pbody {
+      padding: 2rem 2rem 3rem;
+    }
+
+    .pname {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      font-weight: 400;
+      color: var(--text-primary);
+      margin-bottom: .3rem;
+    }
+
+    .ptag {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--rg-dim);
+      margin-bottom: 1.5rem;
+    }
+
+    .pusp {
+      padding: 1rem 1.25rem;
+      border-left: 2px solid var(--rg);
+      background: rgba(212, 175, 55, .05);
+      margin-bottom: 1.75rem;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    .pusp strong {
+      color: var(--rg);
+      font-weight: 500;
+    }
+
+    /* PANEL TABS */
+    .ptabs {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+
+    .ptab {
+      padding: 10px 22px;
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: color .2s, border-color .2s;
+    }
+
+    .ptab.on {
+      color: var(--rg);
+      border-bottom-color: var(--rg);
+    }
+
+    .ptab:hover:not(.on) {
+      color: var(--text-secondary);
+    }
+
+    .ptab-body {
+      display: none;
+    }
+
+    .ptab-body.on {
+      display: block;
+    }
+
+    .psec {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--rg-dim);
+      margin: 2.5rem 0 1.25rem;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .bgrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .blabel {
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: .4rem;
+    }
+
+    .bval {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .bval ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .bval ul li::before {
+      content: "— ";
+      color: var(--rg-dim);
+    }
+
+    .feebox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 1.5rem;
+      border: 1px solid var(--border-bright);
+      background: rgba(212, 175, 55, .04);
+      margin-bottom: 1.5rem;
+    }
+
+    .feelabel {
+      font-size: 12px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .feeamt {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 500;
+      color: var(--rg-light);
+    }
+
+    .pffor {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    .pftag {
+      padding: 5px 12px;
+      border: 1px solid var(--border-bright);
+      color: var(--rg-dim);
+      font-size: 12px;
+      letter-spacing: .06em;
+    }
+
+    .vgrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .vcard {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .vimg-wrap {
+      position: relative;
+      aspect-ratio: 9/16;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--black-4);
+    }
+
+    .vvid {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: var(--black);
+    }
+
+    .vig-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--text-secondary);
+      font-size: 11px;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: all 0.2s;
+    }
+
+    .vig-btn:hover {
+      background: var(--rg);
+      color: var(--black);
+      border-color: var(--rg);
+    }
+
+    .pactions {
+      display: flex;
+      gap: 12px;
+      margin-top: 2rem;
+    }
+
+    .btn-primary {
+      flex: 1;
+      padding: 13px;
+      background: var(--rg);
+      color: var(--black);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: background .2s;
+    }
+
+    .btn-primary:hover {
+      background: var(--rg-light);
+    }
+
+    .btn-sec {
+      padding: 13px 20px;
+      background: transparent;
+      border: 1px solid var(--border-bright);
+      color: var(--text-secondary);
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: border-color .2s, color .2s;
+    }
+
+    .btn-sec:hover {
+      border-color: var(--rg);
+      color: var(--rg);
+    }
+
+    /* STAGE LAYOUT */
+    .stage-wrap {
+      background: var(--black-3);
+      border: 1px solid var(--pur-border);
+      border-radius: 3px;
+      padding: 1.5rem;
+      margin-top: .25rem;
+    }
+
+    .stage-title {
+      font-size: 10px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .stage-box {
+      position: relative;
+      background: var(--black-5);
+      border: 1px solid rgba(123, 90, 192, .3);
+      border-radius: 2px;
+      padding: 10px 8px 16px;
+    }
+
+    .stage-box::before {
+      content: 'STAGE';
+      position: absolute;
+      top: -1px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 9px;
+      letter-spacing: .2em;
+      padding: 2px 12px;
+      background: var(--pur-mid);
+      color: var(--rg-pale);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+    }
+
+    .srow {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .smember {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      min-width: 54px;
+    }
+
+    .sicon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--black-4);
+      border: 1px solid var(--border-bright);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+    }
+
+    .sicon.hi {
+      border-color: var(--rg);
+      background: rgba(212, 175, 55, .13);
+      box-shadow: 0 0 12px rgba(212, 175, 55, .15);
+    }
+
+    .sname {
+      font-size: 9px;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-align: center;
+      max-width: 56px;
+      line-height: 1.3;
+    }
+
+    .scrowd {
+      width: 100%;
+      text-align: center;
+      padding: 8px;
+      font-size: 10px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border: 1px dashed rgba(212, 175, 55, .14);
+      border-top: none;
+      background: rgba(212, 175, 55, .02);
+    }
+
+    .snote {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 12px;
+      font-style: italic;
+      line-height: 1.65;
+    }
+
+    /* FOUNDERS */
+    .founders {
+      padding: 6rem 2rem;
+      background: var(--black-2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .founders-in {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .fgrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 3.5rem;
+    }
+
+    .fcard {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .fimg {
+      position: relative;
+      aspect-ratio: 4/5;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .fimg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.4) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.6s ease;
+      pointer-events: none;
+      mix-blend-mode: overlay;
+    }
+
+    .fimg:hover {
+      transform: translateY(-8px) scale(1.02) rotate(1.5deg);
+      border-color: var(--rg);
+      box-shadow: -15px 15px 30px rgba(212, 175, 55, 0.15),
+        0 0 15px rgba(212, 175, 55, 0.2);
+    }
+
+    .fimg:hover::after {
+      opacity: 1;
+    }
+
+    .fimg-ph {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(160deg, var(--black-4) 0%, var(--pur-deep) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: rgba(212, 175, 55, .11);
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), color 0.6s ease;
+    }
+
+    .fimg:hover .fimg-ph {
+      transform: scale(1.1) rotate(-1.5deg);
+      color: rgba(212, 175, 55, 0.4);
+    }
+
+    .fimg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .fimg:hover .fimg-img {
+      transform: scale(1.08);
+    }
+
+    .fname {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--rg);
+      margin-bottom: 0.25rem;
+      text-shadow: 0 6px 20px rgba(212, 175, 55, 0.06);
+    }
+
+    .founder-actions {
+      margin-top: 0.6rem;
+      display: flex;
+      gap: 0.6rem;
+      align-items: center;
+    }
+
+    .btn-inst {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: transparent;
+      border: 1px solid var(--rg);
+      color: var(--rg);
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: background .2s, color .2s, transform .12s;
+    }
+
+    .btn-inst:hover {
+      background: var(--rg);
+      color: var(--black);
+      transform: translateY(-2px);
+    }
+
+    .frole {
+      font-size: 11px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--rg-dim);
+      margin: 4px 0 12px;
+    }
+
+    .fbio {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    .fstory {
+      margin-top: 3rem;
+      padding: 2rem;
+      border: 1px solid var(--border);
+      background: rgba(212, 175, 55, .03);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--text-secondary);
+      line-height: 1.9;
+      text-align: center;
+    }
+
+    /* CTA */
+    .cta {
+      padding: 7rem 2rem;
+      text-align: center;
+      background: var(--black);
+    }
+
+    .cta-in {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .cta-h {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--text-primary);
+      margin-bottom: 1.25rem;
+    }
+
+    .cta-h em {
+      font-style: italic;
+      color: var(--rg);
+    }
+
+    .cta-p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+    }
+
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 15px 36px;
+      background: var(--rg);
+      color: var(--black);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background .2s, transform .15s;
+    }
+
+    .btn-cta:hover {
+      background: var(--rg-light);
+      transform: translateY(-2px);
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 3rem 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      background: var(--black-2);
+    }
+
+    .flogo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      color: var(--rg);
+      margin-bottom: .5rem;
+    }
+
+    .ftag {
+      font-size: 11px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .fsocial {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .fsocial a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: .05em;
+      transition: color .2s;
+    }
+
+    .fsocial a:hover {
+      color: var(--rg);
+    }
+
+    .fcopy {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media(max-width:640px) {
+      .bgrid {
+        grid-template-columns: 1fr;
+      }
+
+      .fgrid {
+        grid-template-columns: 1fr;
+      }
+
+      .acard.featured {
+        grid-column: span 1;
+        aspect-ratio: 4/3;
+      }
+
+      .pactions {
+        flex-direction: column;
+      }
+
+      nav {
+        display: none !important;
+      }
+
+      .nav-link {
+        display: none;
+      }
+
+      .ptabs {
+        overflow-x: auto;
+      }
+    }
+
+
+    /* --- ROSTER MIGRATED CSS --- */
+    #roster,
+    .modal-overlay {
+      --bg: var(--black);
+      --bg-elev: var(--black-2);
+      --bg-card: var(--black-3);
+      --text: var(--text-primary);
+      --text-muted: var(--text-muted);
+      --text-dim: #666666;
+      --cyan: var(--rg);
+      --cyan-dim: var(--rg-dim);
+      --yellow: #C8102E;
+      --gold: var(--rg);
+      --navy: var(--black);
+      --border-hover: var(--border-bright);
+      --border-yellow: rgba(200, 16, 46, 0.25);
+      --border: var(--black-4);
+      --border-color: var(--black-4);
+    }
+
+    .section {
+      padding: 32px 24px 80px;
+      max-width: 1340px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 16px;
+      display: inline-block;
+      position: relative;
+    }
+
+    .section-label::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      transform: translateX(-50%);
+      width: 32px;
+      height: 1px;
+      background: var(--yellow);
+    }
+
+    .section-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+
+    .section-title .italic {
+      font-style: italic;
+      color: var(--cyan);
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    /* FILTERS */
+    .filters {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+    }
+
+    .filter-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 10px 20px;
+      border-radius: 100px;
+      font-size: 12.5px;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      letter-spacing: 0.5px;
+      font-weight: 500;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--border-hover);
+      color: var(--text);
+    }
+
+    .filter-btn.active {
+      background: var(--cyan);
+      color: var(--navy);
+      border-color: var(--cyan);
+      font-weight: 600;
+    }
+
+    /* ARTIST GRID */
+    .artist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 28px;
+    }
+
+    .artist-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      position: relative;
+    }
+
+    .artist-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--border-hover);
+      box-shadow: 0 24px 70px rgba(41, 200, 222, 0.18);
+    }
+
+    .artist-card.flagship {
+      grid-column: span 2;
+    }
+
+    .artist-card.flagship .card-thumbnail {
+      height: 460px;
+    }
+
+    .card-thumbnail {
+      position: relative;
+      width: 100%;
+      height: 360px;
+      background:
+        radial-gradient(ellipse at center, rgba(41, 200, 222, 0.12) 0%, transparent 70%),
+        linear-gradient(135deg, #0A1428 0%, #1a2642 100%);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .face-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .artist-card:hover .face-img {
+      transform: scale(1.06);
+    }
+
+    .artist-card[data-artist="tamasha"] .face-img {
+      object-position: center 35%;
+    }
+
+    .artist-card[data-artist="naachshala"] .face-img {
+      object-position: center 38%;
+    }
+
+    .artist-card[data-artist="deewana"] .face-img {
+      object-position: center 18%;
+    }
+
+    .artist-card[data-artist="aj_singh"] .face-img {
+      object-position: center 20%;
+    }
+
+    .artist-card[data-artist="fifth_string"] .face-img {
+      object-position: center 26%;
+    }
+
+    .artist-card[data-artist="nawaab"] .face-img {
+      object-position: center 32%;
+    }
+
+    /* Fallback for cards using logo (no face image yet — Nawaab) */
+    .logo-bg .band-logo-img:not(.face-img),
+    .logo-bg svg {
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
+      margin: 10%;
+      filter: blur(2px);
+      opacity: 0.55;
+    }
+
+    .artist-card.flagship .logo-bg .band-logo-img,
+    .artist-card.flagship .logo-bg svg {
+      max-width: 70%;
+      max-height: 70%;
+    }
+
+    .thumb-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, rgba(6, 8, 15, 0) 0%, rgba(6, 8, 15, 0) 55%, rgba(6, 8, 15, 0.88) 100%);
+      pointer-events: none;
+    }
+
+    .card-name-overlay {
+      position: absolute;
+      bottom: 22px;
+      left: 26px;
+      right: 26px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .band-display-name {
+      font-family: 'Cinzel', serif;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 1.05;
+      letter-spacing: 0.04em;
+      color: var(--text);
+      margin-bottom: 4px;
+      font-style: normal;
+      text-transform: uppercase;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+    }
+
+    .artist-card.flagship .band-display-name {
+      font-size: 44px;
+    }
+
+    .band-display-tagline {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--yellow);
+      font-weight: 500;
+      margin-top: 2px;
+    }
+
+    .card-badge {
+      position: static;
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 12px;
+      border-radius: 100px;
+      font-size: 10px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 10px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+      backdrop-filter: blur(8px);
+    }
+
+    .card-badge.gold {
+      background: var(--yellow);
+      color: var(--navy);
+    }
+
+    .card-badge.cyan {
+      background: var(--cyan);
+      color: var(--navy);
+    }
+
+    .card-body {
+      padding: 26px 28px 28px;
+    }
+
+    .meta-tags,
+    .ideal-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .card-body .meta-tags {
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+
+    .tag {
+      font-size: 11px;
+      padding: 5px 11px;
+      background: rgba(41, 200, 222, 0.07);
+      color: var(--cyan);
+      border-radius: 100px;
+      letter-spacing: 0.4px;
+      border: 1px solid rgba(41, 200, 222, 0.18);
+      font-weight: 500;
+    }
+
+    .tag.ideal {
+      background: rgba(245, 213, 71, 0.06);
+      color: var(--yellow);
+      border-color: var(--border-yellow);
+    }
+
+    .card-short {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin: 16px 0 22px;
+    }
+
+    .card-short em {
+      font-style: italic;
+      color: var(--text);
+    }
+
+    .card-short .inline-star {
+      color: var(--yellow);
+      font-size: 0.95em;
+      margin-right: 4px;
+      text-shadow: 0 0 10px rgba(245, 213, 71, 0.22);
+    }
+
+
+    .card-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn {
+      padding: 11px 18px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      font-family: inherit;
+      letter-spacing: 0.3px;
+      border: none;
+    }
+
+    .btn-expand {
+      flex: 1;
+      background: transparent;
+      border: 1px solid var(--border-hover);
+      color: var(--cyan);
+    }
+
+    .btn-expand:hover {
+      background: var(--cyan);
+      color: var(--navy);
+      transform: scale(1.02);
+    }
+
+    .btn-wa {
+      background: var(--cyan);
+      color: var(--navy);
+      flex: 1;
+    }
+
+    .btn-wa:hover {
+      background: var(--yellow);
+      transform: scale(1.02);
+    }
+
+    .btn-wa svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* MODAL */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .78);
+      backdrop-filter: blur(5px);
+      z-index: 200;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .modal-content {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: min(900px, 100vw);
+      background: var(--bg-card);
+      border-left: 1px solid var(--border);
+      border-radius: 0;
+      overflow-y: auto;
+      transform: translateX(100%);
+      transition: transform .35s cubic-bezier(.25, .46, .45, .94);
+      z-index: 201;
+      margin: 0;
+    }
+
+    .modal-overlay.active .modal-content {
+      transform: translateX(0);
+    }
+
+    .modal-close {
+      position: fixed;
+      top: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(6, 8, 15, 0.7);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 202;
+      transition: all 0.2s;
+      line-height: 1;
+    }
+
+    .modal-close:hover {
+      background: var(--cyan);
+      color: var(--navy);
+      border-color: var(--cyan);
+    }
+
+
+    .modal-hero {
+      position: relative;
+      min-height: 290px;
+      border-bottom: 1px solid var(--border-color);
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      padding: 26px;
+      background: #07101f;
+      isolation: isolate;
+    }
+
+    .modal-cover-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 34%;
+      transform: scale(1.02);
+      filter: saturate(1.03) contrast(1.03) brightness(0.92);
+    }
+
+    .modal-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 82% 18%, rgba(41, 200, 222, 0.18) 0%, rgba(41, 200, 222, 0.07) 18%, transparent 38%),
+        radial-gradient(circle at 85% 20%, rgba(245, 213, 71, 0.10) 0%, transparent 32%),
+        linear-gradient(180deg, rgba(5, 11, 24, 0.12) 0%, rgba(5, 11, 24, 0.42) 52%, rgba(5, 11, 24, 0.88) 100%);
+      z-index: 1;
+    }
+
+    .modal-hero::after {
+      content: '';
+      position: absolute;
+      inset: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .modal-logo-highlight {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      width: 88px;
+      height: 88px;
+      border-radius: 18px;
+      background: rgba(7, 16, 31, 0.36);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28), 0 0 28px rgba(41, 200, 222, 0.10);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      backdrop-filter: blur(14px);
+      z-index: 3;
+    }
+
+    .modal-logo-highlight img,
+    .modal-logo-highlight svg {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 0 14px rgba(245, 213, 71, 0.10));
+    }
+
+    .modal-hero-copy {
+      position: relative;
+      z-index: 3;
+      max-width: 100%;
+    }
+
+    .modal-name {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.02;
+      margin: 0 0 8px;
+      text-transform: uppercase;
+      text-shadow: 0 4px 30px rgba(0, 0, 0, 0.55);
+    }
+
+    .modal-sub {
+      font-size: 13px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--yellow);
+      margin: 0;
+      text-shadow: 0 3px 16px rgba(0, 0, 0, 0.35);
+    }
+
+    .modal-usp-box {
+      display: block;
+      padding: 16px 18px;
+      border: 1px solid rgba(41, 200, 222, 0.20);
+      background: linear-gradient(180deg, rgba(41, 200, 222, 0.08) 0%, rgba(7, 16, 31, 0.65) 100%);
+      border-radius: 16px;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    }
+
+    .modal-usp-box strong {
+      color: var(--cyan);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    .modal-usp-box p {
+      margin: 0;
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 15px;
+    }
+
+    .modal-logo-highlight {
+      display: none !important;
+    }
+
+    .modal-logo-strip {
+      padding: 18px 26px 0;
+    }
+
+    .modal-artist-logo {
+      width: 100%;
+      min-height: 94px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      background: linear-gradient(180deg, rgba(10, 20, 40, 0.88) 0%, rgba(8, 14, 28, 0.94) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 22px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      overflow: hidden;
+    }
+
+    .modal-artist-logo img,
+    .modal-artist-logo svg {
+      max-width: 78%;
+      max-height: 54px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.22));
+    }
+
+    .modal-artist-logo.logo-square img,
+    .modal-artist-logo.logo-square svg {
+      max-height: 66px;
+      max-width: 66px;
+    }
+
+    @media (max-width: 768px) {
+      .modal-logo-strip {
+        padding: 16px 22px 0;
+      }
+
+      .modal-artist-logo {
+        min-height: 84px;
+        border-radius: 18px;
+        padding: 16px 18px;
+      }
+
+      .modal-artist-logo img,
+      .modal-artist-logo svg {
+        max-width: 82%;
+        max-height: 48px;
+      }
+
+      .modal-artist-logo.logo-square img,
+      .modal-artist-logo.logo-square svg {
+        max-height: 58px;
+        max-width: 58px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .modal-hero {
+        min-height: 250px;
+        padding: 20px;
+      }
+
+      .modal-logo-highlight {
+        width: 72px;
+        height: 72px;
+        right: 18px;
+        top: 18px;
+        border-radius: 16px;
+        padding: 10px;
+      }
+
+      .modal-hero-copy {
+        max-width: calc(100% - 88px);
+      }
+
+      .modal-name {
+        font-size: 32px;
+      }
+
+      .modal-sub {
+        font-size: 11px;
+        letter-spacing: 2px;
+      }
+    }
+
+    .modal-section {
+      padding: 28px 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .modal-section:last-child {
+      border-bottom: none;
+    }
+
+    .modal-h4 {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 18px;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .modal-quick-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .modal-quick-stats>div {
+      background: var(--bg-elev);
+      padding: 18px;
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .modal-quick-stats strong {
+      display: block;
+      font-family: 'Fraunces', serif;
+      font-size: 36px;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1;
+      margin-bottom: 4px;
+      font-style: italic;
+    }
+
+    .modal-prose p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+
+    .modal-prose p:last-child {
+      margin-bottom: 0;
+    }
+
+    .ensemble-pill {
+      background: rgba(41, 200, 222, 0.05);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--cyan);
+      border-radius: 0 10px 10px 0;
+      padding: 18px 22px;
+      font-size: 13.5px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .modal-origin {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 19px;
+      line-height: 1.6;
+      font-style: italic;
+      color: var(--text);
+      padding: 8px 0;
+    }
+
+    .reels-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .reel-block {
+      background: var(--bg-elev);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .reel-label {
+      padding: 10px 14px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--cyan);
+      background: rgba(41, 200, 222, 0.06);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .reel-embed {
+      position: relative;
+      padding-bottom: 130%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .reel-embed iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .placeholder-block {
+      background: var(--bg-elev);
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .placeholder-block p {
+      margin-bottom: 12px;
+    }
+
+    .ideal-tags-modal {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .modal-cta {
+      padding: 36px 40px;
+      background: var(--bg-elev);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .btn-large-modal {
+      background: var(--cyan);
+      color: var(--navy);
+      padding: 16px 36px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.25s;
+      letter-spacing: 0.3px;
+    }
+
+    .btn-large-modal svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .btn-large-modal:hover {
+      background: var(--yellow);
+      transform: scale(1.04);
+    }
+
+    .btn-ghost-sm {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px;
+      border: 1px solid var(--border);
+      padding: 10px 20px;
+      border-radius: 100px;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-ghost-sm:hover {
+      color: var(--cyan);
+      border-color: var(--border-hover);
+    }
+
+    /* FOUNDERS */
+    .founders {
+      background: var(--bg-elev);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 130px 24px;
+      margin-top: 60px;
+    }
+
+    .founders-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .founders-intro {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .origin-quote {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(22px, 2.6vw, 30px);
+      line-height: 1.55;
+      color: var(--text);
+      font-style: italic;
+      text-align: center;
+      max-width: 820px;
+      margin: 32px auto 0;
+      font-weight: 400;
+    }
+
+    .origin-quote .accent {
+      color: var(--yellow);
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    .founders-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .founder-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .founder-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-hover);
+      box-shadow: 0 20px 50px rgba(41, 200, 222, 0.15);
+    }
+
+    .founder-img-wrap {
+      aspect-ratio: 4/5;
+      overflow: hidden;
+      position: relative;
+      background: linear-gradient(135deg, #0A1428, #1a2642);
+    }
+
+    .founder-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .founder-card:hover .founder-img-wrap img {
+      transform: scale(1.06);
+    }
+
+    .founder-img-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 50%, rgba(10, 15, 28, 0.7) 100%);
+    }
+
+    .founder-card-body {
+      padding: 22px 24px 26px;
+      text-align: center;
+    }
+
+    .founder-card-name {
+      font-family: 'Fraunces', serif;
+      font-size: 24px;
+      font-weight: 500;
+      font-style: italic;
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .founder-card-role {
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    .founder-card-short {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .founder-card-cta {
+      margin-top: 14px;
+      color: var(--yellow);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    /* FOUNDER MODAL */
+    .founder-modal-content {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+    }
+
+    .founder-modal-img {
+      aspect-ratio: 3/4;
+      overflow: hidden;
+    }
+
+    .founder-modal-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .founder-modal-img-richa {
+      aspect-ratio: 3/4;
+    }
+
+    .founder-modal-img-richa img {
+      object-position: center 18%;
+    }
+
+    .founder-modal-body {
+      padding: 50px 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .founder-modal-name {
+      font-family: 'Fraunces', serif;
+      font-size: 44px;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.05;
+      margin-bottom: 8px;
+    }
+
+    .founder-modal-role {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 28px;
+      font-weight: 500;
+    }
+
+    .founder-modal-bio {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    /* FINAL CTA */
+    .final-cta {
+      padding: 140px 24px;
+      text-align: center;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .final-cta h2 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(40px, 6.5vw, 80px);
+      line-height: 1.05;
+      margin-bottom: 24px;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+    }
+
+    .final-cta h2 .highlight {
+      color: var(--cyan);
+      font-style: italic;
+    }
+
+    .final-cta p {
+      font-size: 18px;
+      color: var(--text-muted);
+      margin-bottom: 44px;
+      line-height: 1.65;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn-large {
+      padding: 18px 40px;
+      font-size: 15px;
+      background: var(--cyan);
+      color: var(--navy);
+      border-radius: 100px;
+      font-weight: 600;
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      transition: all 0.3s;
+    }
+
+    .btn-large svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .btn-large:hover {
+      background: var(--yellow);
+      transform: scale(1.05);
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 80px 24px 40px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .footer-wordmark {
+      width: 112px;
+      margin: 0 auto 28px;
+      opacity: 0.82;
+    }
+
+    .footer-wordmark img {
+      width: 100%;
+      height: auto;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+    .social-link {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: transparent;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: all 0.25s;
+    }
+
+    .social-link:hover {
+      background: var(--cyan);
+      color: var(--navy);
+      border-color: var(--cyan);
+    }
+
+    .social-link svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .footer-tag {
+      font-size: 11px;
+      color: var(--text-dim);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .footer-tag span {
+      color: var(--yellow);
+      margin: 0 6px;
+    }
+
+    .footer-copy {
+      font-size: 11px;
+      color: var(--text-dim);
+      letter-spacing: 0.5px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .artist-card.flagship {
+        grid-column: span 1;
+      }
+
+      .artist-card.flagship .card-thumbnail {
+        height: 360px;
+      }
+
+      .artist-card.flagship .band-display-name {
+        font-size: 38px;
+      }
+
+      .section {
+        padding: 70px 20px;
+      }
+
+      .founders {
+        padding: 80px 20px;
+      }
+
+      .founders-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+      }
+
+      .founder-modal-content {
+        grid-template-columns: 1fr;
+      }
+
+      .founder-modal-img {
+        aspect-ratio: 4/3;
+      }
+
+      .founder-modal-img-richa {
+        aspect-ratio: 3/4 !important;
+      }
+
+      .founder-modal-img-richa img {
+        object-position: center 15% !important;
+      }
+
+      .founder-modal-body {
+        padding: 32px 24px;
+      }
+
+      .modal-section {
+        padding: 22px 24px;
+      }
+
+      .modal-hero {
+        padding: 24px;
+        height: 240px;
+      }
+
+      .modal-name {
+        font-size: 36px;
+      }
+
+      .reels-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .modal-cta {
+        padding: 28px 24px;
+      }
+
+      .final-cta {
+        padding: 80px 24px;
+      }
+
+      .modal-quick-stats strong {
+        font-size: 28px;
+      }
+    }
+
+
+    /* TBL booking essentials grid */
+    .tbl-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--bg-elev);
+    }
+
+    .tbl-row {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tbl-row:last-child {
+      border-bottom: none;
+    }
+
+    .tbl-label {
+      padding: 14px 18px;
+      background: rgba(41, 200, 222, 0.04);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--cyan);
+      font-weight: 600;
+      border-right: 1px solid var(--border);
+    }
+
+    .tbl-value {
+      padding: 14px 20px;
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .stage-diagram {
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .stage-diagram img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .stage-caption {
+      font-size: 11px;
+      color: var(--text-dim);
+      margin-top: 12px;
+      text-align: center;
+      letter-spacing: 1px;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .tbl-row {
+        grid-template-columns: 1fr;
+      }
+
+      .tbl-label {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: 10px 16px;
+      }
+
+      .tbl-value {
+        padding: 12px 16px;
+        font-size: 13px;
+      }
+    }
+
+
+    /* V5: Hide occasion tags on face card — they live inside artist detail only */
+    .card-body .ideal-tags {
+      display: none;
+    }
+
+    /* === V4 mobile improvements === */
+    @media (max-width: 768px) {
+      .hero {
+        padding: 32px 20px 20px !important;
+        min-height: auto !important;
+      }
+
+      .hero-circle-logo {
+        width: 78px !important;
+        height: 78px !important;
+        margin-bottom: 20px !important;
+      }
+
+      .hero-wordmark {
+        width: min(92vw, 360px) !important;
+        margin-bottom: 24px !important;
+      }
+
+      .hero-wordmark img {
+        width: 90px !important;
+      }
+
+      .hero-wordmark::before {
+        top: -8px;
+        left: 50%;
+        width: 112px;
+        height: 112px;
+        filter: blur(16px);
+        transform: translateX(-50%) scale(1.14);
+      }
+
+      .hero-line-yellow {
+        margin-bottom: 18px !important;
+      }
+
+      .hero h1 {
+        margin-bottom: 18px !important;
+        font-size: clamp(28px, 8vw, 40px) !important;
+      }
+
+      .hero-company-wordmark {
+        width: 230px !important;
+        margin-top: -12px !important;
+        margin-bottom: 26px !important;
+      }
+
+      .hero-tagline {
+        margin-bottom: 24px !important;
+        font-size: 11px !important;
+        letter-spacing: 4px !important;
+      }
+
+      .section {
+        padding: 8px 16px 60px !important;
+      }
+
+      .section-header {
+        margin-bottom: 24px !important;
+      }
+
+      .section-title {
+        font-size: clamp(28px, 7vw, 38px) !important;
+      }
+
+      .filters {
+        margin-bottom: 24px !important;
+        gap: 6px !important;
+      }
+
+      .filter-btn {
+        padding: 8px 14px !important;
+        font-size: 12px !important;
+      }
+
+      .artist-grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+      }
+
+      .card-thumbnail {
+        height: 280px !important;
+      }
+
+      .card-body {
+        padding: 22px 22px 24px !important;
+      }
+
+      .band-display-name {
+        font-size: 24px !important;
+        letter-spacing: 0.05em !important;
+      }
+
+      .card-actions {
+        flex-direction: column;
+      }
+
+      .card-actions .btn {
+        width: 100%;
+      }
+    }
+
+
+
+    /* V6.1 modal interaction + premium visual fix */
+    .modal-hero {
+      position: relative !important;
+      min-height: 340px !important;
+      height: auto !important;
+      overflow: hidden !important;
+      display: flex !important;
+      align-items: flex-end !important;
+      padding: 28px !important;
+      background: #07101f !important;
+      isolation: isolate !important;
+      border-bottom: 1px solid var(--border-color) !important;
+    }
+
+    .modal-cover-backdrop {
+      position: absolute;
+      inset: -8%;
+      width: 116%;
+      height: 116%;
+      object-fit: cover;
+      object-position: var(--cover-pos, center center);
+      filter: blur(24px) saturate(1.16) brightness(0.34);
+      transform: scale(1.12);
+      opacity: 0.9;
+      z-index: 0;
+    }
+
+    .modal-cover-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: var(--cover-pos, center center);
+      transform: scale(1.03);
+      filter: saturate(1.06) contrast(1.05) brightness(0.94);
+      z-index: 1;
+    }
+
+    .modal-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 88% 16%, rgba(41, 200, 222, 0.20) 0%, rgba(41, 200, 222, 0.08) 17%, transparent 40%), radial-gradient(circle at 82% 18%, rgba(245, 213, 71, 0.18) 0%, rgba(245, 213, 71, 0.06) 16%, transparent 34%), linear-gradient(180deg, rgba(5, 11, 24, 0.10) 0%, rgba(5, 11, 24, 0.32) 42%, rgba(5, 11, 24, 0.88) 100%) !important;
+      z-index: 2;
+    }
+
+    .modal-hero::after {
+      content: '';
+      position: absolute;
+      inset: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .modal-logo-highlight {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      width: 96px;
+      height: 96px;
+      border-radius: 20px;
+      background: linear-gradient(180deg, rgba(10, 20, 40, 0.78) 0%, rgba(10, 20, 40, 0.58) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      z-index: 4;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.34);
+    }
+
+    .modal-logo-highlight::before {
+      content: '';
+      position: absolute;
+      inset: -10px;
+      border-radius: 28px;
+      background: radial-gradient(circle, rgba(41, 200, 222, 0.20) 0%, rgba(245, 213, 71, 0.12) 24%, transparent 62%);
+      filter: blur(14px);
+      z-index: -1;
+    }
+
+    .modal-logo-highlight img,
+    .modal-logo-highlight svg {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .modal-hero-copy {
+      position: relative;
+      z-index: 4;
+      max-width: 100%;
+    }
+
+    .modal-usp-box {
+      padding: 18px 20px;
+      border-radius: 18px;
+      border: 1px solid rgba(41, 200, 222, 0.18);
+      background: linear-gradient(180deg, rgba(41, 200, 222, 0.09) 0%, rgba(7, 16, 31, 0.88) 100%);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 12px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    .modal-usp-box strong {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+      font-family: 'Cinzel', serif;
+      font-size: 22px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--yellow);
+      text-shadow: 0 0 20px rgba(245, 213, 71, 0.12);
+    }
+
+    .modal-usp-box strong::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(245, 213, 71, 0.4), rgba(41, 200, 222, 0.1));
+    }
+
+    .modal-usp-box p {
+      margin: 0;
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .tbl-value ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .tbl-value li {
+      margin: 5px 0;
+    }
+
+    .tbl-link {
+      color: var(--yellow);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(245, 213, 71, 0.35);
+      padding-bottom: 1px;
+    }
+
+    .tbl-link:hover {
+      color: var(--cyan);
+      border-color: rgba(41, 200, 222, 0.35);
+    }
+
+    .ideal-tags-modal {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .ideal-tags-modal .tag.ideal {
+      padding: 8px 14px;
+      background: rgba(245, 213, 71, 0.08);
+    }
+
+    @media (max-width: 768px) {
+      .modal-hero {
+        min-height: 300px !important;
+        padding: 22px !important;
+        height: auto !important;
+      }
+
+      .modal-logo-highlight {
+        width: 82px;
+        height: 82px;
+        top: 18px;
+        right: 18px;
+        border-radius: 18px;
+        padding: 12px;
+      }
+
+      .modal-hero-copy {
+        max-width: 100%;
+      }
+
+      .modal-name {
+        font-size: 34px !important;
+      }
+
+      .modal-sub {
+        font-size: 11px;
+        letter-spacing: 2.4px;
+      }
+    }
+
+
+
+    /* === Final polish pass === */
+    .section-label {
+      font-size: 13px;
+      letter-spacing: 4.6px;
+    }
+
+    .founders {
+      padding: 96px 24px 104px;
+      margin-top: 42px;
+    }
+
+    .founders-intro {
+      margin-bottom: 52px;
+    }
+
+    .origin-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(24px, 2.8vw, 34px);
+      line-height: 1.42;
+      font-style: normal;
+      letter-spacing: 0.01em;
+    }
+
+    .origin-quote.storyline {
+      max-width: 760px;
+      font-weight: 500;
+    }
+
+    .origin-quote.founder-origin {
+      margin-top: 54px !important;
+      max-width: 900px;
+      font-size: clamp(21px, 2.25vw, 28px);
+      line-height: 1.5;
+      color: rgba(244, 244, 246, 0.88);
+    }
+
+    .founder-card-name,
+    .founder-modal-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: normal;
+      letter-spacing: 0.01em;
+    }
+
+    .founder-card-name {
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .founder-modal-name {
+      font-size: 48px;
+      font-weight: 600;
+    }
+
+    .founder-placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 50% 28%, rgba(245, 213, 71, 0.12), transparent 36%),
+        linear-gradient(135deg, rgba(10, 20, 40, 0.95), rgba(5, 11, 24, 0.95));
+    }
+
+    .founder-initials {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 1px solid rgba(245, 213, 71, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 34px;
+      color: var(--yellow);
+      background: rgba(255, 255, 255, 0.03);
+      box-shadow: 0 0 32px rgba(245, 213, 71, 0.10);
+    }
+
+    .founder-modal-content.no-image {
+      display: block;
+    }
+
+    .founder-modal-content.no-image .founder-modal-body {
+      padding: 54px 52px;
+    }
+
+    /* Desktop-only: show full artist profile cover images without disturbing mobile. */
+    @media (min-width: 769px) {
+      .modal-hero {
+        min-height: 420px !important;
+      }
+
+      .modal-cover-img {
+        object-fit: contain !important;
+        object-position: center center !important;
+        transform: none !important;
+      }
+    }
+
+    /* Mobile one-line hero tagline */
+    @media (max-width: 768px) {
+      .hero-tagline {
+        white-space: nowrap !important;
+        font-size: 9.6px !important;
+        letter-spacing: 2.4px !important;
+        width: 100% !important;
+        text-align: center !important;
+      }
+
+      .hero-tagline .dot {
+        margin: 0 4px !important;
+      }
+
+      .section-label {
+        font-size: 12px;
+        letter-spacing: 4px;
+      }
+
+      .founders {
+        padding: 64px 20px 72px;
+        margin-top: 36px;
+      }
+
+      .founders-intro {
+        margin-bottom: 36px;
+      }
+
+      .origin-quote {
+        font-size: 23px;
+        line-height: 1.42;
+      }
+
+      .origin-quote.founder-origin {
+        margin-top: 44px !important;
+        font-size: 21px;
+      }
+
+      .founder-card-name {
+        font-size: 27px;
+      }
+
+      .founder-modal-name {
+        font-size: 40px;
+      }
+    }
+
+    /* Final logo QA */
+    .modal-artist-logo.logo-tamasha img,
+    .modal-artist-logo.logo-tamasha svg {
+      max-width: 54%;
+      max-height: 40px;
+    }
+
+    .modal-artist-logo.logo-naach img,
+    .modal-artist-logo.logo-naach svg {
+      max-width: 92%;
+      max-height: 60px;
+    }
+
+    .modal-artist-logo.logo-plain-compact,
+    .modal-artist-logo.logo-plain-square {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      min-height: auto;
+      padding: 0;
+    }
+
+    .modal-artist-logo.logo-plain-compact img,
+    .modal-artist-logo.logo-plain-compact svg {
+      max-width: 100%;
+      max-height: 88px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.18));
+    }
+
+    .modal-artist-logo.logo-plain-square img,
+    .modal-artist-logo.logo-plain-square svg {
+      max-width: 100%;
+      max-height: 102px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.18));
+    }
+
+    @media (max-width: 768px) {
+
+      .modal-artist-logo.logo-tamasha img,
+      .modal-artist-logo.logo-tamasha svg {
+        max-width: 56%;
+        max-height: 36px;
+      }
+
+      .modal-artist-logo.logo-naach img,
+      .modal-artist-logo.logo-naach svg {
+        max-width: 96%;
+        max-height: 56px;
+      }
+
+      .modal-artist-logo.logo-plain-compact img,
+      .modal-artist-logo.logo-plain-compact svg {
+        max-height: 76px;
+      }
+
+      .modal-artist-logo.logo-plain-square img,
+      .modal-artist-logo.logo-plain-square svg {
+        max-height: 90px;
+      }
+    }
+
+
+
+    /* === Founder font correction: visibly different typography === */
+    .origin-quote.storyline {
+      font-family: 'Bodoni Moda', serif !important;
+      font-size: clamp(28px, 3.2vw, 42px) !important;
+      line-height: 1.22 !important;
+      font-weight: 500 !important;
+      letter-spacing: -0.015em !important;
+      color: rgba(244, 244, 246, 0.96) !important;
+    }
+
+    .origin-quote.storyline .accent {
+      font-family: 'Bodoni Moda', serif !important;
+      font-style: italic !important;
+      font-weight: 500 !important;
+    }
+
+    .founder-card-name,
+    .founder-modal-name {
+      font-family: 'Cinzel', serif !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.12em !important;
+      font-weight: 500 !important;
+    }
+
+    .founder-card-name {
+      font-size: 23px !important;
+      line-height: 1.2 !important;
+    }
+
+    .founder-modal-name {
+      font-size: clamp(34px, 4vw, 50px) !important;
+      line-height: 1.05 !important;
+    }
+
+    .origin-quote.founder-origin {
+      font-family: 'Fraunces', serif !important;
+      font-size: clamp(21px, 2.2vw, 30px) !important;
+      line-height: 1.48 !important;
+      font-weight: 400 !important;
+      letter-spacing: -0.01em !important;
+      color: rgba(244, 244, 246, 0.90) !important;
+    }
+
+    .origin-quote.founder-origin .accent {
+      font-family: 'Fraunces', serif !important;
+      font-style: italic !important;
+      font-weight: 500 !important;
+    }
+
+    @media (max-width: 768px) {
+      .origin-quote.storyline {
+        font-size: 25px !important;
+        line-height: 1.24 !important;
+      }
+
+      .origin-quote.founder-origin {
+        font-size: 20px !important;
+        line-height: 1.44 !important;
+      }
+
+      .founder-card-name {
+        font-size: 22px !important;
+      }
+
+      .founder-modal-name {
+        font-size: 34px !important;
+      }
+    }
+
+
+    /* SCROLL REVEAL ANIMATIONS */
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .scroll-reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Delay staggered elements */
+    .artist-grid .scroll-reveal:nth-child(1) {
+      transition-delay: 0.05s;
+    }
+
+    .artist-grid .scroll-reveal:nth-child(2) {
+      transition-delay: 0.15s;
+    }
+
+    .artist-grid .scroll-reveal:nth-child(3) {
+      transition-delay: 0.25s;
+    }
+
+    .artist-grid .scroll-reveal:nth-child(4) {
+      transition-delay: 0.35s;
+    }
+
+    .artist-grid .scroll-reveal:nth-child(5) {
+      transition-delay: 0.45s;
+    }
+
+    .artist-grid .scroll-reveal:nth-child(6) {
+      transition-delay: 0.55s;
+    }
+
+    /* Better Mobile Layout for v3 Hero */
+    @media (max-width: 768px) {
+      .hero-h1 {
+        font-size: clamp(2.8rem, 12vw, 4rem);
+        margin-bottom: 1rem;
+      }
+
+      .hero-sub {
+        font-size: 14px;
+        margin-bottom: 2rem;
+        padding: 0 10px;
+      }
+
+      .hero-logo {
+        width: 150px;
+        height: 150px;
+      }
+
+      .fcard-text {
+        text-align: center;
+      }
+
+      .founder-actions {
+        justify-content: center;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .btn-hero,
+      .btn-hero-sec {
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Fix Roster Cards on Mobile */
+      .artist-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .artist-card.flagship {
+        grid-column: span 1;
+      }
+
+      .card-thumbnail,
+      .artist-card.flagship .card-thumbnail {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a class="nav-logo" href="#">
+      <span class="nav-brand">SMB HUNGAMA BAND</span>
+    </a>
+    <div class="nav-right">
+      <a class="nav-link" href="#roster">The Roster</a>
+      <a class="nav-link" href="#founders">Our Founder</a>
+      <a class="nav-link" href="#cta">Book Now</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <img alt="SMB Hungama Band Logo" class="hero-logo" src="img/logo.jpeg" />
+
+      <h1 class="hero-h1">SMB Hungama<br /><em>Band</em></h1>
+      <p class="hero-sub">High-Energy Punjabi &amp; Bollywood Live Concerts for Luxury Weddings and Premium Events</p>
+      <div class="hero-actions">
+        <a class="btn-hero" href="#roster">Explore Roster</a>
+        <a class="btn-hero-sec" href="#cta">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="roster">
+    <div class="section-header scroll-reveal">
+      <div class="section-label">The Roster</div>
+      <h2 class="section-title">Six acts. <span class="italic">One standard.</span></h2>
+      <p class="section-subtitle">Each artist below is exclusively managed by Once More. Tap any card to dive in.</p>
+    </div>
+    <div class="filters scroll-reveal">
+      <button class="filter-btn active" data-filter="all">All Artists</button>
+      <button class="filter-btn" data-filter="dj-band">DJ-based Bands</button>
+      <button class="filter-btn" data-filter="live-band">Live Bands</button>
+      <button class="filter-btn" data-filter="live-dj">Live + DJ</button>
+      <button class="filter-btn" data-filter="instrumental">Instrumental</button>
+    </div>
+    <div class="artist-grid">
+      <article class="artist-card flagship scroll-reveal" data-artist="tamasha" data-category="dj-band">
+        <div class="card-thumbnail">
+          <div class="logo-bg"><img alt="Tamasha" class="face-img" src="img/group.png" /></div>
+          <div class="thumb-overlay"></div>
+          <div class="card-name-overlay">
+            <div class="card-badge gold">★ Flagship</div>
+            <div class="band-display-name">Tamasha</div>
+            <div class="band-display-tagline">The Bollywood Spectacle</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="meta-tags"><span class="tag">10 Piece</span><span class="tag">DJ based</span><span
+              class="tag">Bollywood-Punjabi</span></div>
+          <div class="ideal-tags"><span class="tag ideal">Sangeet</span><span class="tag ideal">Cocktail</span><span
+              class="tag ideal">Reception</span></div>
+          <p class="card-short">Our <span class="inline-star">★</span>Flagship <em>Livewire</em> band since 2018,
+            setting new benchmarks with each show! 1000+ shows and counting! Tamasha takes the night to another level!
+          </p>
+          <div class="card-actions">
+            <button class="btn btn-expand" onclick="openArtist('tamasha')">View Profile →</button>
+            <a class="btn btn-wa" href="#" onclick="event.stopPropagation()" target="_blank"><svg fill="currentColor"
+                viewbox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+                </path>
+              </svg> Enquire</a>
+          </div>
+        </div>
+      </article>
+      <article class="artist-card scroll-reveal" data-artist="naachshala" data-category="live-dj">
+        <div class="card-thumbnail">
+          <div class="logo-bg"><img alt="Naachshala" class="face-img" src="img/2.jpeg" /></div>
+          <div class="thumb-overlay"></div>
+          <div class="card-name-overlay">
+            <div class="band-display-name">Naachshala</div>
+            <div class="band-display-tagline">The Dance Floor Reigniters</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="meta-tags"><span class="tag">11 Piece</span><span class="tag">Live + DJ based</span><span
+              class="tag">Bollywood-Retro-Punjabi</span></div>
+          <div class="ideal-tags"><span class="tag ideal">Sangeet</span><span class="tag ideal">Anniversary</span><span
+              class="tag ideal">Corporate</span></div>
+          <p class="card-short">The most versatile hybrid band, a unique combination of Live + DJ based, each member is
+            a soloist in their own right, designed to pull you out of your seats!</p>
+          <div class="card-actions">
+            <button class="btn btn-expand" onclick="openArtist('naachshala')">View Profile →</button>
+            <a class="btn btn-wa" href="#" onclick="event.stopPropagation()" target="_blank"><svg fill="currentColor"
+                viewbox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+                </path>
+              </svg> Enquire</a>
+          </div>
+        </div>
+      </article>
+      <article class="artist-card scroll-reveal" data-artist="deewana" data-category="live-band">
+        <div class="card-thumbnail">
+          <div class="logo-bg"><img alt="Deewana" class="face-img" src="assets/images/deewana_card.png" /></div>
+          <div class="thumb-overlay"></div>
+          <div class="card-name-overlay">
+            <div class="band-display-name">Deewana</div>
+            <div class="band-display-tagline">The Romantic Headliner</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="meta-tags"><span class="tag">13 Piece</span><span class="tag">Live Band</span><span
+              class="tag">Bollywood</span></div>
+          <div class="ideal-tags"><span class="tag ideal">Wedding Day</span><span class="tag ideal">Sangeet</span><span
+              class="tag ideal">Reception</span></div>
+          <p class="card-short">Bringing back the original charm of Indian cinema. Think SRK meets Sonu Nigam!
+            <em>Deewana</em> with his voice of gold and music that touches your soul will transport you to the
+            romanticism of early 2000s Bollywood.
+          </p>
+          <div class="card-actions">
+            <button class="btn btn-expand" onclick="openArtist('deewana')">View Profile →</button>
+            <a class="btn btn-wa" href="#" onclick="event.stopPropagation()" target="_blank"><svg fill="currentColor"
+                viewbox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+                </path>
+              </svg> Enquire</a>
+          </div>
+        </div>
+      </article>
+      <article class="artist-card scroll-reveal" data-artist="aj_singh" data-category="dj-band">
+        <div class="card-thumbnail">
+          <div class="logo-bg"><img alt="AJ Singh" class="face-img" src="assets/images/aj_singh_card.png" /></div>
+          <div class="thumb-overlay"></div>
+          <div class="card-name-overlay">
+            <div class="band-display-name">AJ Singh</div>
+            <div class="band-display-tagline">The Crowd Conductor</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="meta-tags"><span class="tag">10 Piece</span><span class="tag">DJ based</span><span
+              class="tag">Bollywood-Punjabi</span></div>
+          <div class="ideal-tags"><span class="tag ideal">Baraat</span><span class="tag ideal">Sangeet</span><span
+              class="tag ideal">Cocktail</span></div>
+          <p class="card-short">A sought-after performer with a sharp stage presence, a growing fan-base and recent
+            performances for icons like gold medallist Neeraj Chopra and World Champion spinner Kuldeep Yadav.</p>
+          <div class="card-actions">
+            <button class="btn btn-expand" onclick="openArtist('aj_singh')">View Profile →</button>
+            <a class="btn btn-wa" href="#" onclick="event.stopPropagation()" target="_blank"><svg fill="currentColor"
+                viewbox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+                </path>
+              </svg> Enquire</a>
+          </div>
+        </div>
+      </article>
+      <article class="artist-card scroll-reveal" data-artist="fifth_string" data-category="instrumental">
+        <div class="card-thumbnail">
+          <div class="logo-bg"><img alt="5th String Project" class="face-img"
+              src="assets/images/fifth_string_card.png" /></div>
+          <div class="thumb-overlay"></div>
+          <div class="card-name-overlay">
+            <div class="band-display-name">5th String Project</div>
+            <div class="band-display-tagline">The Instrumental Saga</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="meta-tags"><span class="tag">8 Piece</span><span class="tag">Instrumental</span><span
+              class="tag">Multi-Genre</span></div>
+          <div class="ideal-tags"><span class="tag ideal">Welcome Lunch</span><span
+              class="tag ideal">Cocktail</span><span class="tag ideal">Reception</span></div>
+          <p class="card-short">A violin-led instrumental band redefining what an instrumental setup can be. From
+            Mission Impossible to AR Rahman — get ready to be surprised with their setlist!</p>
+          <div class="card-actions">
+            <button class="btn btn-expand" onclick="openArtist('fifth_string')">View Profile →</button>
+            <a class="btn btn-wa" href="#" onclick="event.stopPropagation()" target="_blank"><svg fill="currentColor"
+                viewbox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+                </path>
+              </svg> Enquire</a>
+          </div>
+        </div>
+      </article>
+      <article class="artist-card scroll-reveal" data-artist="nawaab" data-category="dj-band">
+        <div class="card-thumbnail">
+          <div class="logo-bg"><img alt="Nawaab" class="face-img" src="assets/images/nawaab_card.png" /></div>
+          <div class="thumb-overlay"></div>
+          <div class="card-name-overlay">
+            <div class="card-badge cyan">★ New</div>
+            <div class="band-display-name">Nawaab</div>
+            <div class="band-display-tagline">Not An Act. An Experience.</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="meta-tags"><span class="tag">3 Piece</span><span class="tag">DJ+Percussion</span><span
+              class="tag">Multi-Genre</span></div>
+          <div class="ideal-tags"><span class="tag ideal">After Party</span><span class="tag ideal">Fashion
+              Show</span><span class="tag ideal">Concert Opener</span></div>
+          <p class="card-short">Tabla maestro <em>Umair Khan</em> transforms into <em>Nawaab</em> — taal and ad libs
+            over techno, sufi tech and commercial chartbusters. Perfect for after-parties &amp; elite clubs.</p>
+          <div class="card-actions">
+            <button class="btn btn-expand" onclick="openArtist('nawaab')">View Profile →</button>
+            <a class="btn btn-wa" href="#" onclick="event.stopPropagation()" target="_blank"><svg fill="currentColor"
+                viewbox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+                </path>
+              </svg> Enquire</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="founders" id="founders">
+    <div class="founders-in">
+      <div class="sec-head scroll-reveal">
+        <p class="eyebrow">The Founder</p>
+        <h2 class="sec-title">From backstage<br /><em>to center stage.</em></h2>
+        <p class="sec-sub">He grew up on Bollywood classics. Then he decided to become the soundtrack of your most
+          important nights.</p>
+      </div>
+      <div class="fgrid" style="align-items: center;">
+        <div class="fimg scroll-reveal">
+          <img alt="Founder" class="fimg-img" src="img/Founder.jpeg" />
+        </div>
+        <div class="fcard-text scroll-reveal">
+          <p class="fname">King Yogi</p>
+          <p class="frole">Founder &amp; Lead Performer</p>
+          <div class="founder-actions">
+            <a class="btn-inst" href="#" rel="noopener" target="_blank">View on Instagram</a>
+          </div>
+          <p class="fbio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ex repellat commodi
+            aliquid, sint esse a aspernatur nihil quos, nemo ut enim nesciunt voluptatem corporis error temporibus,
+            quibusdam magnam ipsum.</p>
+          <div class="fstory" style="margin-top: 2rem; text-align: left; padding: 1.5rem;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel voluptate laborum expedita hic, unde facere
+            cupiditate blanditiis. Nesciunt doloremque dolorem dolor corporis beatae officiis cumque commodi delectus
+            architecto. Aut, suscipit?
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta" id="cta">
+    <div class="cta-in">
+      <p class="eyebrow" style="margin-bottom:1.5rem;">Have an Event?</p>
+      <h2 class="cta-h">Let's make<br />your night <em>unforgettable.</em></h2>
+      <p class="cta-p">Send us the date, the city, and the vibe. We'll tell you exactly which act will set your event on
+        fire.</p>
+      <a class="btn-cta" href="#" target="_blank">
+        <svg aria-hidden="true" fill="currentColor" height="16" viewbox="0 0 24 24" width="16">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z">
+          </path>
+          <path
+            d="M12 0C5.373 0 0 5.373 0 12c0 2.14.563 4.148 1.542 5.888L.057 23.428a.75.75 0 00.916.916l5.54-1.485A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.93 0-3.742-.502-5.31-1.376l-.38-.213-3.94 1.057 1.057-3.94-.213-.38A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z">
+          </path>
+        </svg>
+        Message Us on WhatsApp
+      </a>
+    </div>
+  </section>
+  <footer>
+    <div class="flogo">SMB HUNGAMA BAND</div>
+    <div class="ftag">Music • Dance • Energy • Repeat</div>
+    <div class="fsocial">
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">YouTube</a>
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">WhatsApp</a>
+    </div>
+    <div class="fcopy">© SMB Hungama Band · smb-hungamaband.com</div>
+  </footer>
+  <script>
+    // Filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.artist-card');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Modal functions
+    function openArtist(id) {
+      const data = document.getElementById('modal-data-' + id);
+      if (!data) return;
+      document.getElementById('modal-body').innerHTML = data.innerHTML;
+      document.getElementById('modal-overlay').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function openFounder(id) {
+      const data = document.getElementById('modal-data-' + id);
+      if (!data) return;
+      document.getElementById('modal-body').innerHTML = data.innerHTML;
+      document.getElementById('modal-overlay').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(e) {
+      if (e && e.target.id !== 'modal-overlay') return;
+      document.getElementById('modal-overlay').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // ESC key closes modal
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeModal({ target: { id: 'modal-overlay' } });
+    });
+  </script>
+  <div class="modal-data" id="modal-data-tamasha" style="display:none">
+    <div class="modal-hero" style="--cover-pos:center 44%;">
+      <img alt="Tamasha backdrop" class="modal-cover-backdrop" src="img/group.png" />
+      <img alt="Tamasha" class="modal-cover-img" src="img/group.png" />
+      <div class="modal-hero-copy">
+        <div class="modal-name">Tamasha</div>
+        <div class="modal-sub">The Bollywood Spectacle</div>
+      </div>
+    </div>
+    <div class="modal-logo-strip">
+      <div class="modal-artist-logo logo-tamasha"><img alt="Tamasha logo" class="band-logo-img"
+          src="assets/embedded/embed_003.png" /></div>
+    </div>
+    <div class="modal-section">
+      <div class="modal-usp-box">
+        <strong>USP</strong>
+        <p>They read the room. Rule the night. Command attention and have an unmatched Track Library. A very intelligent
+          ensemble.</p>
+      </div>
+    </div>
+    <div class="modal-section tbl-section">
+      <h4 class="modal-h4">Booking essentials</h4>
+      <div class="tbl-grid">
+        <div class="tbl-row">
+          <div class="tbl-label">Band Composition</div>
+          <div class="tbl-value">
+            <ul>
+              <li>3 Vocalist-Performers</li>
+              <li>1 DJ</li>
+              <li>1 Violinist</li>
+              <li>1 Percussionist</li>
+              <li>2 Dholi</li>
+              <li>1 Manager</li>
+              <li>1 Sound Engineer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Flights</div>
+          <div class="tbl-value">
+            <ul>
+              <li>10 members travelling by flight (2 business class, 8 economy)</li>
+              <li>Client to book TO and FRO</li>
+              <li>Priority Check-in/Fast Forward, XL seats and meals to be pre-booked</li>
+              <li>15kg excess baggage to be pre-booked</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Ground Transport</div>
+          <div class="tbl-value">3 Innova Crysta — airport to hotel and back to airport.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Accommodation</div>
+          <div class="tbl-value">6 rooms on double occupancy in the same property as the show, or nearest 5-star
+            property only.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">F&amp;B</div>
+          <div class="tbl-value">All meals, in-room dining only, to be taken care of by the organizer.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Tech Rider</div>
+          <div class="tbl-value">To be arranged by Host/Organiser.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Sound Check</div>
+          <div class="tbl-value">2-hour dedicated window post power connection.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Performance Timeline</div>
+          <div class="tbl-value">90-minute set, extendable to 120 minutes based on crowd response.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Performance Fee</div>
+          <div class="tbl-value">₹8,00,000 + GST</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Payment Terms</div>
+          <div class="tbl-value">50% advance to confirm booking · 50% balance at sound check.</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Stage layout</h4>
+      <div class="stage-diagram"><img alt="Tamasha stage layout" loading="lazy"
+          src="assets/images/tamasha_stage_layout.webp" /></div>
+      <p class="stage-caption">Indicative stage layout — final positioning confirmed during pre-production.</p>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Perfect for</h4>
+      <div class="ideal-tags-modal"><span class="tag ideal">Sangeet</span><span class="tag ideal">Cocktail</span><span
+          class="tag ideal">Reception</span><span class="tag ideal">Corporate</span><span
+          class="tag ideal">Baraat</span></div>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Live moments</h4>
+      <div class="reels-grid">
+        <div class="reel-block">
+          <div class="reel-label">Phuket</div>
+          <div class="reel-embed">
+            <iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowtransparency="true" frameborder="0" loading="lazy" scrolling="no"
+              src="https://www.instagram.com/"></iframe>
+          </div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Ahmedabad</div>
+          <div class="reel-embed">
+            <iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowtransparency="true" frameborder="0" loading="lazy" scrolling="no"
+              src="https://www.instagram.com/"></iframe>
+          </div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Dubai</div>
+          <div class="reel-embed">
+            <iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowtransparency="true" frameborder="0" loading="lazy" scrolling="no"
+              src="https://www.instagram.com/"></iframe>
+          </div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Khao Lak</div>
+          <div class="reel-embed"><iframe
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowtransparency="true"
+              frameborder="0" loading="lazy" scrolling="no" src="https://www.instagram.com/"></iframe></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <a class="btn-large-modal" href="#" target="_blank">
+        <svg fill="currentColor" viewbox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+          </path>
+        </svg> Enquire about Tamasha
+      </a>
+      <a class="btn-ghost-sm" href="#" target="_blank">Visit Instagram →</a>
+    </div>
+  </div>
+  <div class="modal-data" id="modal-data-naachshala" style="display:none">
+    <div class="modal-hero" style="--cover-pos:center 44%;">
+      <img alt="Naachshala backdrop" class="modal-cover-backdrop" src="img/2.jpeg" />
+      <img alt="Naachshala" class="modal-cover-img" src="img/2.jpeg" />
+      <div class="modal-hero-copy">
+        <div class="modal-name">Naachshala</div>
+        <div class="modal-sub">The Dance Floor Reigniters</div>
+      </div>
+    </div>
+    <div class="modal-logo-strip">
+      <div class="modal-artist-logo logo-naach"><img alt="Naachshala logo" class="band-logo-img"
+          src="assets/embedded/embed_004.png" /></div>
+    </div>
+    <div class="modal-section">
+      <div class="modal-usp-box">
+        <strong>USP</strong>
+        <p>Lures every generation to the Dance floor! Switches from Bollywood to Punjabi to Retro to even a bit of
+          English Tracks Seamlessly. Both formats in one band - Live + DJ. From leading the crowd to copying signature
+          moves to making them sing along loudly. They have it all covered!</p>
+      </div>
+    </div>
+    <div class="modal-section tbl-section">
+      <h4 class="modal-h4">Booking essentials</h4>
+      <div class="tbl-grid">
+        <div class="tbl-row">
+          <div class="tbl-label">Band Composition</div>
+          <div class="tbl-value">
+            <ul>
+              <li>DJ</li>
+              <li>Violinist</li>
+              <li>Percussionist</li>
+              <li>Dholi</li>
+              <li>Female Lead</li>
+              <li>Male Lead</li>
+              <li>Bass Guitarist</li>
+              <li>Manager</li>
+              <li>Sound Engineer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Flights</div>
+          <div class="tbl-value">
+            <ul>
+              <li>11 members travelling by flight</li>
+              <li>Organiser to book all tickets</li>
+              <li>Origin and destination to be confirmed before booking</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Ground Transport</div>
+          <div class="tbl-value">3 Innova Crysta — airport to hotel and back.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Accommodation</div>
+          <div class="tbl-value">6 rooms in double occupancy in the same property as the show, or nearest 5-star only.
+          </div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">F&amp;B</div>
+          <div class="tbl-value">All meals, in-room dining, to be taken care of by the organizer.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Tech Rider</div>
+          <div class="tbl-value">To be arranged by Host/Organiser.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Sound Check</div>
+          <div class="tbl-value">2-hour dedicated window post power connection.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Performance Timeline</div>
+          <div class="tbl-value">90-minute set, extendable to 120 minutes based on crowd response.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Performance Fee</div>
+          <div class="tbl-value">₹4,50,000 + GST</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Payment Terms</div>
+          <div class="tbl-value">50% as booking amount · 50% balance during sound check. Visa formalities on client
+            side.</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Stage layout</h4>
+      <div class="stage-diagram"><img alt="Naachshala stage layout" loading="lazy"
+          src="assets/images/naachshala_stage_layout.webp" /></div>
+      <p class="stage-caption">Indicative stage layout — final positioning confirmed during pre-production.</p>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Perfect for</h4>
+      <div class="ideal-tags-modal"><span class="tag ideal">Sangeet</span><span
+          class="tag ideal">Anniversary</span><span class="tag ideal">Corporate</span><span
+          class="tag ideal">Cocktail</span><span class="tag ideal">After Party</span></div>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Live moments</h4>
+      <div class="reels-grid">
+        <div class="reel-block">
+          <div class="reel-label">Ludhiana</div>
+          <div class="reel-embed">
+            <iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowtransparency="true" frameborder="0" loading="lazy" scrolling="no"
+              src="https://www.instagram.com/"></iframe>
+          </div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Jaipur</div>
+          <div class="reel-embed">
+            <iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowtransparency="true" frameborder="0" loading="lazy" scrolling="no"
+              src="https://www.instagram.com/"></iframe>
+          </div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Ahmedabad</div>
+          <div class="reel-embed">
+            <iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowtransparency="true" frameborder="0" loading="lazy" scrolling="no"
+              src="https://www.instagram.com/"></iframe>
+          </div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Indore</div>
+          <div class="reel-embed"><iframe
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowtransparency="true"
+              frameborder="0" loading="lazy" scrolling="no" src="https://www.instagram.com/"></iframe></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <a class="btn-large-modal" href="#" target="_blank">
+        <svg fill="currentColor" viewbox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+          </path>
+        </svg> Enquire about Naachshala
+      </a>
+      <a class="btn-ghost-sm" href="#" target="_blank">Visit Instagram →</a>
+    </div>
+  </div>
+  <div class="modal-data" id="modal-data-deewana" style="display:none">
+    <div class="modal-hero" style="--cover-pos:center 34%;">
+      <img alt="Deewana backdrop" class="modal-cover-backdrop" src="assets/images/deewana_card.png" />
+      <img alt="Deewana" class="modal-cover-img" src="assets/images/deewana_card.png" />
+      <div class="modal-hero-copy">
+        <div class="modal-name">Deewana</div>
+        <div class="modal-sub">The Romantic Headliner</div>
+      </div>
+    </div>
+    <div class="modal-logo-strip">
+      <div class="modal-artist-logo"><img alt="Deewana logo" class="band-logo-img"
+          src="assets/embedded/embed_005.png" /></div>
+    </div>
+    <div class="modal-section">
+      <div class="modal-usp-box">
+        <strong>USP</strong>
+        <p>The return of the OG charm &amp; romanticism that people are so badly craving!</p>
+      </div>
+    </div>
+    <div class="modal-section tbl-section">
+      <h4 class="modal-h4">Booking essentials</h4>
+      <div class="tbl-grid">
+        <div class="tbl-row">
+          <div class="tbl-label">Band Composition</div>
+          <div class="tbl-value">
+            <ul>
+              <li>Deewana (Lead Vocalist)</li>
+              <li>Lead Guitar</li>
+              <li>Bass Guitar</li>
+              <li>Drummer</li>
+              <li>Keyboard</li>
+              <li>MD Keyboard</li>
+              <li>Flute</li>
+              <li>Violinist</li>
+              <li>Percussionist</li>
+              <li>Dhol</li>
+              <li>Sound Engineer</li>
+              <li>Manager</li>
+              <li>Photographer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Flights</div>
+          <div class="tbl-value">
+            <ul>
+              <li>13 members travelling by flight</li>
+              <li>Client to book all tickets</li>
+              <li>Priority Check-in/Fast Forward, XL seats and meals to be pre-booked</li>
+              <li>25kg excess baggage to be pre-booked</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Ground Transport</div>
+          <div class="tbl-value">4 Innova Crysta — airport to hotel and back to airport.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Accommodation</div>
+          <div class="tbl-value">6 rooms on double occupancy + 1 single room in the same property as the show, or
+            nearest 4/5-star property only.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">F&amp;B</div>
+          <div class="tbl-value">All meals, in-room dining only, to be taken care of by the organizer.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Tech Rider</div>
+          <div class="tbl-value">To be arranged by Host/Organiser.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Sound Check</div>
+          <div class="tbl-value">2-hour dedicated window post power connection.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Performance Timeline</div>
+          <div class="tbl-value">90-minute set, extendable to 120 minutes based on crowd response.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Performance Fee</div>
+          <div class="tbl-value">₹4,00,000 + GST</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Payment Terms</div>
+          <div class="tbl-value">50% advance to confirm booking · 50% balance at sound check.</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Stage layout</h4>
+      <div class="stage-diagram"><img alt="Deewana stage layout" loading="lazy"
+          src="assets/images/deewana_stage_layout.webp" /></div>
+      <p class="stage-caption">Indicative stage layout — final positioning confirmed during pre-production.</p>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Perfect for</h4>
+      <div class="ideal-tags-modal"><span class="tag ideal">Sangeet</span><span class="tag ideal">Cocktail</span><span
+          class="tag ideal">Reception</span><span class="tag ideal">Proposal</span><span class="tag ideal">Mehfil
+          Night</span></div>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Live moments</h4>
+      <div class="reels-grid">
+        <div class="reel-block">
+          <div class="reel-label">Deewana Tera</div>
+          <div class="reel-embed"><iframe
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowtransparency="true"
+              frameborder="0" loading="lazy" scrolling="no" src="https://www.instagram.com/"></iframe></div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Sun Zara</div>
+          <div class="reel-embed"><iframe
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowtransparency="true"
+              frameborder="0" loading="lazy" scrolling="no" src="https://www.instagram.com/"></iframe></div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Kahani Suno</div>
+          <div class="reel-embed"><iframe
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowtransparency="true"
+              frameborder="0" loading="lazy" scrolling="no" src="https://www.instagram.com/"></iframe></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <a class="btn-large-modal" href="#" target="_blank">
+        <svg fill="currentColor" viewbox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+          </path>
+        </svg> Enquire about Deewana Live
+      </a>
+      <a class="btn-ghost-sm" href="#" target="_blank">Visit Instagram →</a>
+    </div>
+  </div>
+  <div class="modal-data" id="modal-data-aj_singh" style="display:none">
+    <div class="modal-hero" style="--cover-pos:center 34%;">
+      <img alt="AJ Singh backdrop" class="modal-cover-backdrop" src="assets/images/aj_singh_card.png" />
+      <img alt="AJ Singh" class="modal-cover-img" src="assets/images/aj_singh_card.png" />
+      <div class="modal-hero-copy">
+        <div class="modal-name">AJ Singh</div>
+        <div class="modal-sub">The Crowd Conductor</div>
+      </div>
+    </div>
+    <div class="modal-logo-strip aj-logo-strip">
+      <div class="modal-artist-logo logo-plain-compact"><img alt="AJ Singh logo" class="band-logo-img"
+          src="assets/embedded/aj_singh_logo_clean.png" /></div>
+    </div>
+    <div class="modal-section">
+      <div class="modal-usp-box">
+        <strong>USP</strong>
+        <p>Star-coded stage presence. Effortless Crowd control.</p>
+      </div>
+    </div>
+    <div class="modal-section tbl-section">
+      <h4 class="modal-h4">Booking essentials</h4>
+      <div class="tbl-grid">
+        <div class="tbl-row">
+          <div class="tbl-label">Band Composition</div>
+          <div class="tbl-value">
+            <ul>
+              <li>AJ Singh (Lead)</li>
+              <li>UV Singh (Singer/Performer)</li>
+              <li>2 Dhol</li>
+              <li>Male Hype Creator</li>
+              <li>DJ</li>
+              <li>Manager</li>
+              <li>Sound Engineer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Flights</div>
+          <div class="tbl-value">
+            <ul>
+              <li>10 members travelling by flight</li>
+              <li>Client to book TO and FRO</li>
+              <li>Origin and destination to be confirmed before booking</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Ground Transport</div>
+          <div class="tbl-value">1 Fortuner/Endeavour + 2 Innova Crysta to be booked.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Accommodation</div>
+          <div class="tbl-value">1 Suite + 4 rooms in the same hotel as the show, or nearest 5-star property.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">F&amp;B</div>
+          <div class="tbl-value">All meals via in-room dining to be pre-activated before check-in, posted to client
+            account.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Tech Rider</div>
+          <div class="tbl-value">To be arranged by Host/Organiser.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Sound Check</div>
+          <div class="tbl-value">2-hour dedicated window post power connection.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Performance Timeline</div>
+          <div class="tbl-value">90-minute set, extendable to 120 minutes based on crowd response.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Performance Fee</div>
+          <div class="tbl-value">₹4,50,000 + GST</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Payment Terms</div>
+          <div class="tbl-value">50% advance to book the show · Balance one week prior to event. Visa formalities on
+            client side.</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Stage layout</h4>
+      <div class="stage-diagram"><img alt="AJ Singh stage layout" loading="lazy"
+          src="assets/images/aj_singh_stage_layout.webp" /></div>
+      <p class="stage-caption">Indicative stage layout — final positioning confirmed during pre-production.</p>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Perfect for</h4>
+      <div class="ideal-tags-modal"><span class="tag ideal">Sangeet</span><span class="tag ideal">Corporate</span><span
+          class="tag ideal">College Show</span><span class="tag ideal">Reception</span><span class="tag ideal">After
+          Party</span></div>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Live moments</h4>
+      <div class="reels-grid">
+        <div class="reel-block">
+          <div class="reel-label">For Neeraj Chopra</div>
+          <div class="reel-embed">
+            <iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowtransparency="true" frameborder="0" loading="lazy" scrolling="no"
+              src="https://www.instagram.com/"></iframe>
+          </div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">For Kuldeep Yadav</div>
+          <div class="reel-embed">
+            <iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowtransparency="true" frameborder="0" loading="lazy" scrolling="no"
+              src="https://www.instagram.com/"></iframe>
+          </div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Punjabi Madness</div>
+          <div class="reel-embed"><iframe
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowtransparency="true"
+              frameborder="0" loading="lazy" scrolling="no" src="https://www.instagram.com/"></iframe></div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Fujairah</div>
+          <div class="reel-embed"><iframe
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowtransparency="true"
+              frameborder="0" loading="lazy" scrolling="no" src="https://www.instagram.com/"></iframe></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <a class="btn-large-modal" href="#" target="_blank">
+        <svg fill="currentColor" viewbox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+          </path>
+        </svg> Enquire about AJ Singh
+      </a>
+      <a class="btn-ghost-sm" href="#" target="_blank">Visit Instagram →</a>
+    </div>
+  </div>
+  <div class="modal-data" id="modal-data-fifth_string" style="display:none">
+    <div class="modal-hero" style="--cover-pos:center 34%;">
+      <img alt="5th String Project backdrop" class="modal-cover-backdrop" src="assets/images/fifth_string_card.png" />
+      <img alt="5th String Project" class="modal-cover-img" src="assets/images/fifth_string_card.png" />
+      <div class="modal-hero-copy">
+        <div class="modal-name">5th String Project</div>
+        <div class="modal-sub">The Instrumental Saga</div>
+      </div>
+    </div>
+    <div class="modal-logo-strip">
+      <div class="modal-artist-logo logo-plain-square"><img alt="5th String Project logo" class="band-logo-img"
+          src="assets/embedded/fifth_string_logo_clean.png" /></div>
+    </div>
+    <div class="modal-section">
+      <div class="modal-usp-box">
+        <strong>USP</strong>
+        <p>Instrumental. But not Background Music. A violin-led band beyond ordinary.</p>
+      </div>
+    </div>
+    <div class="modal-section tbl-section">
+      <h4 class="modal-h4">Booking essentials</h4>
+      <div class="tbl-grid">
+        <div class="tbl-row">
+          <div class="tbl-label">Band Composition</div>
+          <div class="tbl-value">
+            <ul>
+              <li>Violinist</li>
+              <li>Drummer</li>
+              <li>Lead Guitar</li>
+              <li>Bass Guitar</li>
+              <li>Flute</li>
+              <li>Manager</li>
+              <li>Sound Engineer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Flights</div>
+          <div class="tbl-value">
+            <ul>
+              <li>8 members travelling by flight</li>
+              <li>Client to book TO and FRO</li>
+              <li>Origin and destination to be confirmed before booking</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Ground Transport</div>
+          <div class="tbl-value">2 Innova Crysta to be booked.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Accommodation</div>
+          <div class="tbl-value">4 rooms in the same hotel as the show, or nearest 4/5-star property.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">F&amp;B</div>
+          <div class="tbl-value">All meals via in-room dining to be pre-activated before check-in, posted to client
+            account.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Tech Rider</div>
+          <div class="tbl-value">To be arranged by Host/Organiser.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Sound Check</div>
+          <div class="tbl-value">2-hour dedicated window post power connection.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Performance Timeline</div>
+          <div class="tbl-value">90-minute set, extendable to 120 minutes based on crowd response.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Performance Fee</div>
+          <div class="tbl-value">₹2,50,000 + GST</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Payment Terms</div>
+          <div class="tbl-value">50% advance to book the show · Balance one week prior to event. Visa formalities on
+            client side.</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Stage layout</h4>
+      <div class="stage-diagram"><img alt="5th String Project stage layout" loading="lazy"
+          src="assets/images/fifth_string_stage_layout.webp" /></div>
+      <p class="stage-caption">Indicative stage layout — final positioning confirmed during pre-production.</p>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Perfect for</h4>
+      <div class="ideal-tags-modal"><span class="tag ideal">Cocktail</span><span class="tag ideal">Wedding
+          Lunch</span><span class="tag ideal">Corporate</span><span class="tag ideal">Mehfil</span><span
+          class="tag ideal">Curated Concert</span></div>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Live moments</h4>
+      <div class="reels-grid">
+        <div class="reel-block">
+          <div class="reel-label">Hai Rama</div>
+          <div class="reel-embed">
+            <iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowtransparency="true" frameborder="0" loading="lazy" scrolling="no"
+              src="https://www.instagram.com/"></iframe>
+          </div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Mission Impossible</div>
+          <div class="reel-embed"><iframe
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowtransparency="true"
+              frameborder="0" loading="lazy" scrolling="no" src="https://www.instagram.com/"></iframe></div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Attention</div>
+          <div class="reel-embed"><iframe
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowtransparency="true"
+              frameborder="0" loading="lazy" scrolling="no" src="https://www.instagram.com/"></iframe></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-cta" id="contact">
+      <a class="btn-large-modal" href="#" target="_blank">
+        <svg fill="currentColor" viewbox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+          </path>
+        </svg> Enquire about 5th String Project
+      </a>
+      <a class="btn-ghost-sm" href="#" target="_blank">Visit Instagram →</a>
+    </div>
+  </div>
+  <div class="modal-data" id="modal-data-nawaab" style="display:none">
+    <div class="modal-hero" style="--cover-pos:center 30%;">
+      <img alt="Nawaab backdrop" class="modal-cover-backdrop" src="assets/images/nawaab_card.png" />
+      <img alt="Nawaab" class="modal-cover-img" src="assets/images/nawaab_card.png" />
+      <div class="modal-hero-copy">
+        <div class="modal-name">Nawaab</div>
+        <div class="modal-sub">Not An Act. An Experience.</div>
+      </div>
+    </div>
+    <div class="modal-logo-strip">
+      <div class="modal-artist-logo logo-plain-square"><img alt="Nawaab logo" class="band-logo-img"
+          src="assets/embedded/nawaab_logo_clean.png" /></div>
+    </div>
+    <div class="modal-section">
+      <div class="modal-usp-box">
+        <strong>USP</strong>
+        <p>Not just percussions. Rhythm with a Royal Pedigree. Perfect for after-dark celebrations &amp; luxury events.
+        </p>
+      </div>
+    </div>
+    <div class="modal-section tbl-section">
+      <h4 class="modal-h4">Booking essentials</h4>
+      <div class="tbl-grid">
+        <div class="tbl-row">
+          <div class="tbl-label">Band Composition</div>
+          <div class="tbl-value">
+            <ul>
+              <li>Umair Khan (Tabla / Percussion Lead)</li>
+              <li>DJ</li>
+              <li>Sound Engineer</li>
+              <li>Manager</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Flights</div>
+          <div class="tbl-value">
+            <ul>
+              <li>4 members travelling by flight</li>
+              <li>Client to book TO and FRO</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Ground Transport</div>
+          <div class="tbl-value">1 Innova Crysta to be booked.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Accommodation</div>
+          <div class="tbl-value">2 rooms on double occupancy in the same hotel as the show, or nearest 5-star property.
+          </div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">F&amp;B</div>
+          <div class="tbl-value">All meals via in-room dining to be pre-activated, posted to client account.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Tech Rider</div>
+          <div class="tbl-value">To be arranged by Host/Organiser.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Sound Check</div>
+          <div class="tbl-value">2-hour dedicated window post power connection.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Performance Timeline</div>
+          <div class="tbl-value">90-minute set, extendable based on crowd response.</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Performance Fee</div>
+          <div class="tbl-value">₹2,00,000 + GST</div>
+        </div>
+        <div class="tbl-row">
+          <div class="tbl-label">Payment Terms</div>
+          <div class="tbl-value">50% advance to confirm booking · 50% balance at sound check.</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Stage layout</h4>
+      <div class="stage-diagram"><img alt="Nawaab stage layout" loading="lazy"
+          src="assets/images/nawaab_stage_layout.webp" /></div>
+      <p class="stage-caption">Indicative stage layout — final positioning confirmed during pre-production.</p>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Perfect for</h4>
+      <div class="ideal-tags-modal"><span class="tag ideal">After Party</span><span class="tag ideal">Luxury
+          Event</span><span class="tag ideal">Fashion Show</span><span class="tag ideal">Concert Opener</span><span
+          class="tag ideal">Club Night</span></div>
+    </div>
+    <div class="modal-section">
+      <h4 class="modal-h4">Live moments</h4>
+      <div class="reels-grid">
+        <div class="reel-block">
+          <div class="reel-label">Naarma Delhi</div>
+          <div class="reel-embed"><iframe
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowtransparency="true"
+              frameborder="0" loading="lazy" scrolling="no" src="https://www.instagram.com/"></iframe></div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Sangeet Night</div>
+          <div class="reel-embed"><iframe
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowtransparency="true"
+              frameborder="0" loading="lazy" scrolling="no" src="https://www.instagram.com/"></iframe></div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Dirty Good</div>
+          <div class="reel-embed"><iframe
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowtransparency="true"
+              frameborder="0" loading="lazy" scrolling="no" src="https://www.instagram.com/"></iframe></div>
+        </div>
+        <div class="reel-block">
+          <div class="reel-label">Naarma Delhi</div>
+          <div class="reel-embed"><iframe
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowtransparency="true"
+              frameborder="0" loading="lazy" scrolling="no" src="https://www.instagram.com/"></iframe></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <a class="btn-large-modal" href="#" target="_blank">
+        <svg fill="currentColor" viewbox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+          </path>
+        </svg> Enquire about Nawaab
+      </a>
+      <a class="btn-ghost-sm" href="#" target="_blank">Visit Instagram →</a>
+    </div>
+  </div>
+  <div class="modal-data" id="modal-data-manish" style="display:none">
+    <div class="founder-modal-content">
+      <div class="founder-modal-img"><img alt="Manish Ahuja" src="assets/embedded/embed_001.jpg" /></div>
+      <div class="founder-modal-body">
+        <div class="founder-modal-name">Manish Ahuja</div>
+        <div class="founder-modal-role">Founder · Performance &amp; Artist Mentoring</div>
+        <p class="founder-modal-bio">Fashion design background, business family roots, and a magnetism that was clearly
+          born for the stage. Manish entertains, performs, and leads fearlessly — with the kind of taste in music that
+          consistently meets the pulse of every age group in the room.</p>
+        <p class="founder-modal-bio">A sales and marketing genius. He effortlessly yet tirelessly leads the performance
+          and artist mentoring division at Once More, switching seamlessly between fronting Tamasha and being the calm,
+          calculating brain behind its success graph.</p>
+        <p class="founder-modal-bio">Patient, precise, detail-oriented in every decision — a hardworker unlike any
+          other. He's a force in the industry, and one to look up to for Gen Zs and peers alike.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal-data" id="modal-data-richa" style="display:none">
+    <div class="founder-modal-content">
+      <div class="founder-modal-img founder-modal-img-richa"><img alt="Richa Raina"
+          src="assets/images/richa_raina_founder.webp" /></div>
+      <div class="founder-modal-body">
+        <div class="founder-modal-name">Richa Raina</div>
+        <div class="founder-modal-role">Founder · Operations, Strategy &amp; Creative</div>
+        <p class="founder-modal-bio">Lawyer by education, trained dancer and choreographer by passion, entrepreneur from
+          every bone and cell. Richa knew at twelve she wanted to lead and build.</p>
+        <p class="founder-modal-bio">After being a sought-after name in luxury sangeet choreography, she doubled down on
+          the hustle — juggling wedding planning and choreography until the undeniable pull toward artists, stage,
+          glamour and performing arts brought her here. That choreographed chaos is now Once More Entertainment.</p>
+        <p class="founder-modal-bio">She leads operations, admin, people, finance, strategy, creative — everything that
+          needs to keep the engine thriving and vibing. A relentless, unforgiving need to improve our offerings every
+          day. The quiet, unseen force (until now) who fuels the heart of it all.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content" id="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.scroll-reveal').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+
+</html>
