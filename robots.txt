@@ -1,0 +1,8 @@
+# robots.txt for SMB Hungama Band
+# https://www.smbhungamaband.com
+
+User-agent: *
+Allow: /
+Disallow: /drafts/
+
+Sitemap: https://www.smbhungamaband.com/sitemap.xml
