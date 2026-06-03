@@ -1,0 +1,24 @@
+{
+  "name": "smb-band",
+  "version": "1.0.0",
+  "description": "SMB Hungama Band - Live Wedding & Event Bands",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild assets/js/speed-insights.js --bundle --outfile=assets/js/speed-insights.bundle.js --format=iife --minify",
+    "dev": "python -m http.server 8000 || python3 -m http.server 8000"
+  },
+  "keywords": [
+    "wedding",
+    "band",
+    "event",
+    "music"
+  ],
+  "author": "SMB Hungama Band",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.12"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0"
+  }
+}
