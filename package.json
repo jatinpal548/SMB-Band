@@ -16,7 +16,7 @@
   "author": "SMB Hungama Band",
   "license": "ISC",
   "dependencies": {
-    "@vercel/speed-insights": "^1.0.12"
+    "@vercel/speed-insights": "^2.0.0"
   },
   "devDependencies": {
     "esbuild": "^0.20.0"
